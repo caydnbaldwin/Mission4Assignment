@@ -8,11 +8,6 @@ TicTacToeTools t = new TicTacToeTools();
 
 // print the board by CALLING the method in the supporting class
 // METHOD SIGNATURE -> public void PrintBoard(string board)
-t.PrintBoard("012345678");
-[
-    'xxx345678',
-    'ooo345678',
-]
 
 // check for a winner by CALLING the method in the supporting class
 // METHOD SIGNATURE -> public int CheckWinner(string board)
