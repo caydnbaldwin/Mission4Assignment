@@ -1,14 +1,34 @@
 ﻿using Mission4Assignment;
-TicTacToeTools t = new TicTacToeTools();
+
+TicTacToeTools tttt = new TicTacToeTools();
+string[] gameBoard = new string[8];
+string currentPlayer = "X"; // Create a string for what it should mark the square with.
+bool gameOver = false;
 
 // welcome the user
-// create game board array to store players' choices
-// ask each player in turn for their choice
-// update the game board array
+Console.WriteLine("Welcome to THE GREATEST Tic Tac Toe board in THE WORLD!");
+Console.WriteLine();
 
-// print the board by CALLING the method in the supporting class
-// METHOD SIGNATURE -> public void PrintBoard(string board)
+// Start game loop
+do
+{
+    // create game board array to store players' choices
+    
+    // ask each player in turn for their choice
+    int response = int.Parse(Console.ReadLine());
+    
+    // update the game board array
 
-// check for a winner by CALLING the method in the supporting class
-// METHOD SIGNATURE -> public int CheckWinner(string board)
-// notify the players when a win has occurred and which player won the game
+
+    // print the board by CALLING the method in the supporting class
+        tttt.printBoard(board);
+
+    // check for a winner by CALLING the method in the supporting class
+        result = tttt.checkWinner();
+
+    // notify the players when a win has occurred and which player won the game
+        if (result == True)
+        {
+            gameOver = true;
+        }
+} while (!gameOver);
