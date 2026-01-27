@@ -10,6 +10,7 @@ namespace Mission4Assignment
         // contain a method that prints the board based on the information passed to it
         public void PrintBoard(string board)
         {
+            Console.WriteLine();
             for (int i = 0; i < board.Length; i += 3)
             {
                 Console.WriteLine($"{board[i]} | {board[i + 1]} | {board[i + 2]}");
@@ -18,6 +19,7 @@ namespace Mission4Assignment
                     Console.WriteLine("- - - - -");
                 }
             }
+            Console.WriteLine();
         }
         // contain a method that receives the game board array as input and returns if there is a winner and who it was
         public int CheckWinner(string board)
